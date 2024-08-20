@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+body {
+  background: linear-gradient(270deg, #ff4500, #000, #800080, #ff0000);
+  background-size: 200% 200%;
+  animation: backgroundAnimation 30s ease infinite;
+  color: #fff;
+  font-family: 'Creepster', cursive;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.title {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px #ff0000;
+}
+
+.upload-container, .welcome-container {
+  margin: 20px 0;
+}
+
+.file-input {
+  margin-bottom: 10px;
+}
+
+.upload-button, .start-button {
+  background-color: #ff4500;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover, .start-button:hover {
+  background-color: #ff6347;
+}
+
+.file-input-button {
+  background-color: #4CAF50; /* Verde */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.file-input-button:hover {
+  background-color: #45a049;
+}
+
+.decorations {
+  position: relative;
+  margin-top: 20px;
+}
+
+.pumpkin, .ghost {
+  width: 100px;
+  position: absolute;
+  animation: float 3s ease-in-out infinite;
+}
+
+.pumpkin {
+  left: 10%;
+  bottom: 5%; /* Bajar la calabaza */
+}
+
+.ghost {
+  right: 10%;
+  top: 10%;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
